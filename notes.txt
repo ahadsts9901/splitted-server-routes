@@ -1,0 +1,20 @@
+controllers (same as middleware functions) are the uniquw logic of routes 
+
+====> ...middleares,(req, res, next) => {
+
+    ...logic
+    next() =====> this can be called or not in controllers
+    res.send() ====> compulsory in middlewares
+
+}, ...middlewares
+
+
+
+
+
+middlewares are re-usable functions ====> (req, res, next) => {
+
+    ...logic
+    next() =====> this have to be called in middlewares
+    res.send() ====> probably not compulsory
+}
